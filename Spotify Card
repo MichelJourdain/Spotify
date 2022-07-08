@@ -1,0 +1,43 @@
+cards:
+- entities:
+  - entity: input_select.spotify_playlist
+    icon: mdi:playlist-music
+    name: Liste de lecture
+  - entity: input_select.spotify_source
+    icon: mdi:speaker-multiple
+    name: Haut-Pareleurs
+  - entity: script.spotify_music
+    icon: mdi:play
+    name: Jouer
+  - entity: sensor.spotify_att_artiste_en_lecture
+    icon: mdi:account-music
+    name: Artiste
+  - entity: sensor.spotify_att_album_en_lecture
+    icon: mdi:album
+    name: Album
+  - entity: sensor.spotify_att_piece_en_lecture
+    icon: mdi:bookmark-music-outline
+    name: "Pi\xE8ce"
+  header:
+    image: local/images/Spotify.png
+    type: picture
+  type: entities
+- artwork: cover
+  entity: media_player.spotify_michel
+  hide:
+    icon: true
+    info: true
+    name: true
+    power: true
+    source: true
+    volume: false
+  info: scroll
+  mini-media-player-scale: 10
+  name: Spotify
+  shuffle: true
+  sound_mode: full
+  toggle_power: true
+  type: custom:mini-media-player
+items_classes: col-xs-12
+padding: true
+type: custom:dwains-flexbox-card
